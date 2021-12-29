@@ -1,0 +1,7 @@
+--- 
+- name: Playing JumpHost 
+  hosts: jmp1
+  tasks: 
+  - name: Checking Debug Message.
+    debug: 
+      msg: "{{ Hello World }}
