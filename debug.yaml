@@ -4,4 +4,4 @@
   tasks: 
   - name: Checking Debug Message.
     debug: 
-      msg: "{{ Hello World }}"
+      msg: "Hello World"
