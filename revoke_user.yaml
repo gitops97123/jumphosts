@@ -1,0 +1,17 @@
+---
+- name:
+  hosts: dev
+  tasks: 
+  - name: Deleting directory
+    file: 
+      path: /tmp/directory 
+      state: absent
+  - name: Deleting new group
+    group: 
+      name: dev
+      state: absent
+  - name: Deleting new user 
+    user: 
+      name: vedik 
+      state: absent
+      remove: yes 
