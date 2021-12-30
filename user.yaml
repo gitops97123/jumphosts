@@ -1,8 +1,9 @@
 ---
 - name:
   hosts: dev
-  vars: 
+  vars_files:  
     - pass.yaml
+
   tasks: 
   - name: Creating new group
     group: 
