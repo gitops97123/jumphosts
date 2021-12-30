@@ -1,0 +1,19 @@
+---
+- name: applying YAML acl
+  hosts: dev
+  tasks: 
+  - name: Creating /tmp/directory directory 
+    file: 
+      path: /tmp/directory
+      mode: '0700'
+      state: directory 
+  - name: Applying ACL 
+    acl: 
+      path: /tmp/directory
+      entity: vedik 
+      etype: user
+      permissions: rwx 
+      state: present 
+# setfacl -m u:vedik:rwx /tmp/directory 
+
+
