@@ -1,6 +1,6 @@
 ---
 - name:
-  hosts: dev 
+  hosts: development
   vars: 
     - pass.yaml
   tasks: 
